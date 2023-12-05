@@ -36,8 +36,6 @@ public class EventsCatalog extends AbsBasePage {
         for (WebElement element : eventsListLocator) {
             Assertions.assertTrue(element.isDisplayed());
         }
-//        new CookiePopup(driver)
-//                .clickOnButtonCookie();
         return this;
     }
 

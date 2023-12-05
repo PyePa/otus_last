@@ -10,7 +10,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
-//import sun.plugin.dom.exception.BrowserNotSupportedException;
 
 import java.util.Locale;
 
@@ -28,9 +27,7 @@ public class WebDriverFactory implements IFactory{
             }
             case FIREFOX: {
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
-                //firefoxOptions.addArguments("--no-sandbox");
                 firefoxOptions.addArguments("--start-maximized");
-                //firefoxOptions.addArguments("--homepage=about:blank");
                 firefoxOptions.addArguments("--ignore-certificate-errors");
                 return new FirefoxDriver(firefoxOptions);
             }

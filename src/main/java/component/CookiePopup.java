@@ -14,8 +14,6 @@ public class CookiePopup extends AbsBaseComponent{
     private WebElement buttonCookie;
 
     public CookiePopup clickOnButtonCookie() {
-//        webDriverWait.waitForVisibleElement(buttonCookie);
-//        webDriverWait.waitForClickableElement(buttonCookie);
         buttonCookie.click();
         return this;
     }

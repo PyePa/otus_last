@@ -28,8 +28,6 @@ public class CourseCatalog extends AbsBaseComponent {
         for (WebElement element : coursesListLocator) {
             Assertions.assertTrue(element.isDisplayed());
         }
-//        new CookiePopup(driver)
-//                .clickOnButtonCookie();
         return this;
     }
 
